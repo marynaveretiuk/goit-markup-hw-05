@@ -423,8 +423,9 @@ color: #434455;
 
 
 .footer-brand {
-    margin-right: 120px;
-    max-width: 264px;
+max-width: 264px;
+    flex: 0 0 264px;
+    margin-right: 0;
 }
 
 .footer-title {
@@ -476,16 +477,15 @@ color: #434455;
 
 .footer-wrap {
     display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-content: space-between;
-    flex-wrap: no wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 24px;
+        flex-wrap: nowrap;
 }
         
  .subscribe-box {
-text-align: center;
- margin-inline: auto;
+text-align: left;
+ margin-inline: 0;
  }
                 
                 .subscribe-title {
@@ -498,12 +498,21 @@ text-align: center;
                  }
         
                                  .subscribe-form {
-                                    display: flex;
-                                    justify-content: center;
-                                    gap: 24px;
+                                    font-weight: 500;
+                                        font-size: 16px;
+                                        line-height: 1.5;
+                                        letter-spacing: 0.02em;
+                                        color: #fff;
+                                        display: flex;
+                                        flex-wrap: nowrap;
+                                        gap: 16px;
+                                        margin-bottom: 16px;
                                 }
         
                 .subscribe-label {
+                    display: flex;
+                        align-items: center;
+                        margin: 0;
                 
                 }
                                 .subscribe-input-icon {
@@ -525,7 +534,7 @@ text-align: center;
                     line-height: 2;
      
                     letter-spacing: 0.04em;
-                    padding-left: 38px;
+                    padding-left: 16px;
                     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
                      border-radius: 4px;
                      color: #ffffff;
@@ -536,9 +545,10 @@ text-align: center;
                 }
         
                 .subscribe-button {
+                    display: flex;
                     min-width: 165px;
                     height: 40px;
-                    display: flex;
+                    
                     justify-content: center;
                     align-items: center;
                     font-family: "Roboto", sans-serif;
@@ -559,6 +569,7 @@ text-align: center;
                         fill: currentColor;
                         stroke: currentColor;
                         pointer-events: none;
+                        
                     
               }
 
@@ -677,7 +688,7 @@ text-align: center;
     height: 40px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    padding-left: 38px;
+    padding-left: 16px;
     background-color: transparent;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);

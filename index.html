@@ -340,19 +340,22 @@
 
             <div class="subscribe-box">
                 <p class="subscribe-title">Subscribe</p>
-                <form class="subscribe-form" name="email_input" novalidate>
-                    <label class="subscribe-label visually-hidden" for="footer-email">E-mail</label>
-                    <div class="input-wrapper">
-                        <input class="subscribe-input" type="email" name="user-email" id="footer-email"
-                            placeholder="E-mail" />
-                    </div>
-                    <button class="subscribe-button" type="submit">
-                        Subscribe
-                        <svg class="subscribe-icon" width="24" height="24" aria-hidden="true">
-                            <use href="./images/icons.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                </form>
+<form class="subscribe-form" name="email_input" novalidate>
+    <!-- label is first, and the input is the first child of the label -->
+    <label class="subscribe-label" for="footer-email">
+        <input class="subscribe-input" type="email" name="user-email" id="footer-email" placeholder="E-mail"
+            autocomplete="email" />
+        <!-- keep the visible text accessible but not visually shown -->
+        <span class="visually-hidden">E-mail</span>
+    </label>
+
+    <button class="subscribe-button" type="submit">
+        Subscribe
+        <svg class="subscribe-icon" width="24" height="24" aria-hidden="true">
+            <use href="./images/icons.svg#icon-icon-send"></use>
+        </svg>
+    </button>
+</form>
             </div>
         </div>
     </div>
@@ -411,16 +414,16 @@
 
     <!-- Privacy -->
     <div class="checkbox-container">
-        <input id="user-privacy" type="checkbox" name="user-privacy" value="true"
-            class="checkbox-input visually-hidden" />
+        <input id="user-privacy" type="checkbox" name="user-privacy" value="true" class="checkbox-input visually-hidden" />
+    
         <label for="user-privacy" class="checkbox-label">
             <span class="checkbox-box">
-                <svg class="checkbox-icon" width="10" height="8">
+                <svg class="checkbox-icon" width="10" height="8" aria-hidden="true">
                     <use href="./images/icons.svg#check"></use>
                 </svg>
             </span>
             I accept the terms and conditions of the
-            <a href="#" class="privacy-policy">Privacy Policy</a>
+            <a href="#" class="privacy-policy">privacy policy</a>
         </label>
     </div>
 
