@@ -475,104 +475,100 @@ max-width: 264px;
 .social-icon {
     fill: #f4f4fd;}
 
-.footer-wrap {
-    display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 24px;
-        flex-wrap: nowrap;
-}
-        
- .subscribe-box {
-text-align: left;
- margin-inline: 0;
+
+ .footer-wrap {
+     display: flex;
+     align-items: flex-start;
+     justify-content: space-between;
+     gap: 24px;
+     flex-wrap: nowrap;
  }
-                
-                .subscribe-title {
-                    margin-bottom: 16px;
-                    font-weight: 500;
-                      font-size: 16px;
-                    line-height: 1.5;
-                     letter-spacing: 0.02em;
-                     color: #ffffff;
-                 }
-        
-                                 .subscribe-form {
-                                    font-weight: 500;
-                                        font-size: 16px;
-                                        line-height: 1.5;
-                                        letter-spacing: 0.02em;
-                                        color: #fff;
-                                        display: flex;
-                                        flex-wrap: nowrap;
-                                        gap: 16px;
-                                        margin-bottom: 16px;
-                                }
-        
-                .subscribe-label {
-                    display: flex;
-                        align-items: center;
-                        margin: 0;
-                
-                }
-                                .subscribe-input-icon {
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 12px;
-                                    transform: translateY(-50%);
-                                    display: block;
-                                    fill: currentColor;
-                                    pointer-events: none;
-                                }
 
-                .subscribe-input {
-                    width: 264px;
-                    height: 40px;
-                     border: 1px solid #ffffff;
-                    background-color: transparent;
-                    font-size: 12px;
-                    line-height: 2;
-     
-                    letter-spacing: 0.04em;
-                    padding-left: 16px;
-                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-                     border-radius: 4px;
-                     color: #ffffff;
-                }
-        
-    .subscribe-input::placeholder {
-                    color: #ffffff;
-                }
-        
-                .subscribe-button {
-                    display: flex;
-                    min-width: 165px;
-                    height: 40px;
-                    
-                    justify-content: center;
-                    align-items: center;
-                    font-family: "Roboto", sans-serif;
-                    font-size: 16px;
-                    font-weight: 500;
-                    line-height: 1.5;
-                    letter-spacing: 0.04em;
-                    color: #ffffff;
-                    cursor: pointer;
-                    background-color: #4d5ae5;
-                    border: none;
-                    border-radius: 4px;
-                }
-        
-              .subscribe-icon {
-                        margin-left: 16px;
-                        display: block;
-                        fill: currentColor;
-                        stroke: currentColor;
-                        pointer-events: none;
-                        
-                    
-              }
+ .subscribe-box {
+     margin-left: auto;
+     text-align: left;
+ }
 
+ /* Заголовок форми — як у вимогах */
+ .subscribe-title {
+     margin-bottom: 16px;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 1.5;
+     letter-spacing: .02em;
+     color: #fff;
+ }
+
+ /* Форма: в ряд, з центруванням по поперечній осі, gap=24px (важливо для тесту) */
+ .subscribe-form {
+     display: flex;
+     align-items: center;
+     /* вирівнює кнопку й інпут по одній лінії */
+     gap: 24px;
+     /* за вимогою */
+     margin: 0;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 1.5;
+     letter-spacing: .02em;
+     color: #fff;
+ }
+
+ /* Label не додає зайвих відступів/висоти */
+ .subscribe-label {
+     display: flex;
+     align-items: center;
+     margin: 0;
+ }
+
+ /* Інпут: точні стилі з чекліста */
+ .subscribe-input {
+     width: 264px;
+     height: 40px;
+     border: 1px solid #ffffff;
+     background-color: transparent;
+     font-size: 12px;
+     line-height: 2;
+     /* як у вимогах */
+     letter-spacing: .04em;
+     padding-left: 16px;
+     /* як у вимогах */
+     box-shadow: 0 4px 4px rgba(0, 0, 0, .15);
+     border-radius: 4px;
+     color: #ffffff;
+ }
+
+ .subscribe-input::placeholder {
+     color: #ffffff;
+ }
+
+ /* Кнопка: однакова висота з інпутом і внутрішнє центрування */
+ .subscribe-button {
+     min-width: 165px;
+     height: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* по центру вертикально */
+     font-family: "Roboto", sans-serif;
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 1.5;
+     letter-spacing: .04em;
+     color: #ffffff;
+     cursor: pointer;
+     background-color: #4d5ae5;
+     border: none;
+     border-radius: 4px;
+ }
+
+ .subscribe-icon {
+     margin-left: 16px;
+     display: block;
+     fill: currentColor;
+     stroke: currentColor;
+     pointer-events: none;
+ }
 .backdrop {
     position: fixed;
     top: 0;
